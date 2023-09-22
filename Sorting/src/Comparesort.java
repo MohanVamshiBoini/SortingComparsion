@@ -25,6 +25,7 @@ public class Comparesort {
         int[] leftValues = Arrays.copyOfRange(array, 0, middle);
         int[] rightValues = Arrays.copyOfRange(array, middle, array.length);
         mergeSort(leftValues);
+        
         mergeSort(rightValues);
         merge(array, leftValues, rightValues);
     }
